@@ -30,7 +30,9 @@ int diry[8] = {0,1,-1,0,-1,1,-1,1};
 ll MOD = 1000000007;
 
 // min_cost_flow O(FE log V)  F : Flow
-//
+// 1. set V
+// 2. min_cost_flow(source, destination, flow)
+
 
 const int MAX_V = 100000;
 
@@ -95,7 +97,7 @@ int main(){
   cin >> n >> m;
 
   V = n;
-  
+
   REP(i,m){
     int from, to, cost;
     cin >> from >> to >> cost;
